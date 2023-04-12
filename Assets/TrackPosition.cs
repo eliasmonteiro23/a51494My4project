@@ -5,6 +5,7 @@ using UnityEngine;
 public class TrackPosition : MonoBehaviour
 {
     public Vector3 positionChange;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,6 @@ public class TrackPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale += positionChange;
+        transform.position += positionChange;
     }
 }
